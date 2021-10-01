@@ -1,0 +1,28 @@
+.nav{
+  grid-area: navigation;
+  background-color: #222222;
+  border-top: 1px solid #5E5E5E;
+  padding-top: 20px;
+  border-right: 1px solid #5E5E5E;
+}
+
+.nav_item{
+  margin-left: 20px;
+}
+
+.nav_link{
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  margin-top: 15px;
+}
+.nav_link:hover{
+  background-color: #333333;
+}
+.active{
+  color: aquamarine;
+}
+.nav_settings{
+  margin-top: 30px;
+  margin-left: 20px;
+}

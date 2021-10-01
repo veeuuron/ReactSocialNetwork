@@ -1,0 +1,25 @@
+.dialogs{
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+}
+.dialog_items{
+  border-right: 1px solid #5E5E5E;
+}
+.dialogs_title{
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.dialog{
+  margin-top: 10px;
+  margin-left: 85px;
+  font-size: 18px;
+}
+
+.messages{
+  margin-left: 40px;
+  margin-top: 45px;
+}
+.message{
+  margin-bottom: 15px;
+}

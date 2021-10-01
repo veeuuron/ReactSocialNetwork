@@ -1,0 +1,13 @@
+.header{
+  grid-area: header;
+  background-color: #222222;
+}
+.logo{
+  margin-top: 17px;
+  margin-left: 20px;
+}
+.logo a{
+  color: white;
+  font-size: 27px;
+  text-decoration: none;
+}
