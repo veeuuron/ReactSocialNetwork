@@ -3,6 +3,7 @@ import style from "./Dialogs.module.css";
 
 const DialogItem = (props) => {
   var path = "/dialogs/" + props.id;
+
   return (
     <div className={style.dialog}>
       <NavLink className={style.dialog_link} to={path}>
@@ -17,20 +18,19 @@ const Message = (props) => {
 };
 
 const Dialogs = () => {
-  
   var dialogsData = [
     {id: "1", name: "Sasha"},
     {id: "2", name: "Tony"},
     {id: "3", name: "Sashka"},
     {id: "4", name: "Annetta"},
     {id: "5", name: "Vasya"},
-  ]
+  ];
 
-var messagesData = [
-  {message: "Hi"},
-  {message: "How are you?"},
-  {message: "bye"}
-]
+  var messagesData = [
+    {message: "Hi"},
+    {message: "How are you?"},
+    {message: "bye"},
+  ];
 
   return (
     <div className={style.dialogs}>
