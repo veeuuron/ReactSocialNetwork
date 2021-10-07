@@ -1,19 +1,15 @@
 import style from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
-const MyPosts = () => {
+const MyPosts = (props) => {
 
-  var postData = [
-    {message: "It`s my first post", likesCount: "12"},
-    {message: "Hi, i`m from UA", likesCount: "15"}
-  ]
+var  postsElements = props.posts.map( p => <Post message={p.message} likesCount={p.likesCount} /> );
 
   return (
     <div className={style.content}>
       My posts
       <div>New Post</div>
-      <Post  message = {postData[0].message} likesCount={postData[0].likesCount} />
-      <Post  message = {postData[1].message} likesCount={postData[1].likesCount} />
+      {postsElements}
     </div>
   );
 };
