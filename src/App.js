@@ -18,12 +18,12 @@ function App(props) {
         <div className="app-wrapper-content">
           <Route
             path="/profile"
-            render={() => <Profile posts={props.posts} />}
+            render={() => <Profile state={props.state.profilePage} />}
           />
           <Route
             path="/dialogs"
             render={() => (
-              <Dialogs dialogs={props.dialogs} messages={props.messages} />
+              <Dialogs state={props.state.dialogsPage} />
             )}
           />
           <Route path="/news" render={() => <News />} />
