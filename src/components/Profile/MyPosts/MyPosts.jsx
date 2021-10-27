@@ -10,7 +10,8 @@ var newPostElement = React.createRef();
 
 var addPost = () =>{
   var text = newPostElement.current.value;
-  alert(text);
+  props.addPost(text);
+  text = newPostElement.current.value = '';
 }
   return (
     <div className={style.content}>

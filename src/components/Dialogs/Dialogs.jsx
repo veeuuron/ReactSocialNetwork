@@ -15,9 +15,9 @@ const Dialogs = (props) => {
 
     var newMessage = () =>{
       var text = newMessageElement.current.value;
-      alert(text);
+      props.addMessage(text);
     }
-
+      
   return (
     <div className={style.dialogs}>
       <div className={style.dialog_items}>
